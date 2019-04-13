@@ -1,0 +1,31 @@
+body {
+    background: #524763 url('.../img/leveluptuts-square-large.png') no-repeat;
+}
+
+h1 {
+    text-align: center;
+    color: yellow;
+    font-size: 33px;
+    text-transform: lowercase;
+}
+
+p {
+    font-family: Helvetica, arial, sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    color: white;
+    font-size: 1.4em;
+}
+
+.wrapper {
+    background-color: black;
+}
+
+.first {
+    font:italic small-caps 900 1.4em Helvetica, arial, sans-serif;
+    /*or/*
+    text-indent: 100px;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: 900;
+}

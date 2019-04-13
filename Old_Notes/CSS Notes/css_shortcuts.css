@@ -1,0 +1,54 @@
+text-decoration {
+    background: linear-gradient(90deg,red,yellow,rgb(204, 204, 255));
+    background: repeating-linear-gradient(45deg,red,yellow,rgb(204, 204, 255) hsl(180,80%,40%));
+    background-color: rgb(0,0,0);
+    /*--teal (#09A7A1), cyan (#00FFFF), raspberry (#FF007D), magenta (#FF00FF), orange (#FF790E), yellow (#FFFF00);--*/
+    /*--green hsl(120,100%,50%), cyan hsl(180,100%,50%), red hsl(0,100%,50%), magenta hsl(300,100%,50%);--*/
+    border-radius: 50%; /*--for round--*/
+    /*--border-width, border-color, border-top, border-bottom--*/
+    /*--border: width style color------------------------------*/
+    box-shadow: 25px 10px 0px 0px blue;
+    /*--offset-x, offset-y, blur-radius, spread-radius--*/
+    height: 1em;
+    width: 1em;
+    /*--16px, 75%, auto; min-width, max-width;--*/
+    line-height: normal;
+    /*--2.5, 3em, 150%, 32px;--*/
+    list-style: none;
+    /*--circle, disc;--*/
+    text-align: justify;
+    /*--center, left, right, start, end, justify-all, match-parent;--*/
+    text-decoration: underline;
+    /*--line-through, wavy overline lime, dashed underline overline, blink, underline dotted red;--*/
+    text-transform: small-caps;
+    /*--uppercase, lowercase, capitalize, initial, inherit, none, fullwidth;--*/
+    font-weight: bold;
+    /*--normal, lighter, bolder, 100, 900;--*/
+    font-style: italic;
+    /*--normal, oblique, oblique 14deg;--*/
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    /*--offset-x, offset-y, blur-radius, spread-radius--*/
+    margin: 200px auto 100px;
+    /*--1 (all four sides), 2 (top & bottom, left & right), 3 (top, left & right, bottom), 4 (top, right, bottom, left)--*/
+    /*--margin-top,margin-right,margin-bottom,margin-left----------------------------------------------------------------*/
+    opacity: 0.7;
+    /*--rgba = Red, Green, Blue, Opacity
+        A value of 1 is opaque, which isn't transparent at all.
+        A value of 0.5 is half see-through.
+        A value of 0 is completely transparent.--*/
+    padding: 40px 20px;
+    /*--padding: top right bottom left;--*/
+    position: relative;
+    /*--absolute, fixed;--*/
+    bottom: 20px;
+    left: 15px;
+    /*--tell the browser how far to offset an item relative to where it would sit in the normal flow of the document--*/
+    float: left;
+    /*--right;--*/
+    transform: scale();
+    /*--matrix(1,2,3,4,5,6), translate(120px,50%), rotate(0.5turn), skew(30deg,20deg), skewX(-32deg)--*/
+    z-index: 1;
+    /*--2, 3, 4, etc.--*/
+
+
+}
