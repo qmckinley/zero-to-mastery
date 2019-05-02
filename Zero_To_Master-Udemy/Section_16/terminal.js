@@ -48,3 +48,15 @@ git remote -v                           // see current remote repository for you
 git remote add upstream                 // 
 git pull upstream master                //
 git merge upstream/master               // merge changes from upstream/master to local master
+
+// react.js
+sudo                                    // admin persmission
+npm install -g create-react-app         // global install / starter project
+create-react-app `nameOfApp`            // minus back-tics
+npm start                               // react-scripts start
+npm run build                           // react-scripts build
+npm test                                // react-scripts test --env=jsdom
+npm run eject                           // react-scripts eject
+
+git remote add origin `https://github.com/qmckinley/awareness-is-key.git`
+git push -u origin master
