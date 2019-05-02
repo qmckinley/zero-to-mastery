@@ -100,3 +100,6 @@ fs.unlink('./dir', err => {             // delete file
   }
   console.log('Inception');
 });
+
+console.time('nameTimer');              // log time to execute
+console.timeEnd('nameTimer');
