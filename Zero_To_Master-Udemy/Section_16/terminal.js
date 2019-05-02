@@ -60,3 +60,43 @@ npm run eject                           // react-scripts eject
 
 git remote add origin `https://github.com/qmckinley/awareness-is-key.git`
 git push -u origin master
+
+// node
+process.exit()                          // exit node in terminal
+node fileName                           // runs file
+console.log(__dirname);                 // logs current directory
+npm init -y                             // package.json -y = yes to everything
+npm install nodemon --save-dev          // devDependencies just for developing
+npm install express 
+npm install body-parser 
+
+const fs = require('fs')                // file system
+
+fs.readFile('./dir', (err, data) => {   // read file - asynchronous
+  if (err) {
+    console.log('errrrrorrrr');
+  }
+  console.log(data.toString('utf8'));   // standard encoding
+});
+
+const file = fs.readFileSync('./dir');  // read file - sychronous
+console.log(file.toString());
+
+fs.appendFile('./dir', 'txt', err => {  // write to a file
+  if (err) {
+    console.log(err);
+  }
+});
+
+fs.writeFile('newFile', 'txt', err => { // add new file
+  if (err) {
+    console.log(err);
+  }
+});
+
+fs.unlink('./dir', err => {             // delete file
+  if (err) {
+    console.log(err);
+  }
+  console.log('Inception');
+});
