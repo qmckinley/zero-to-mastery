@@ -18,6 +18,49 @@ rm newFileName.path                 // removes file
 rm -r folerName                     // removes Directory or folder
 say the computer speaks             // say "the computer speaks"
 
+// brew
+brew update             // update homebrew
+brew doctor             // verify everything is working
+brew cleanup 
+
+// postgresql
+initdb /directory       // create cluster or data directory
+rm -rf /directory       // remove old database files (dangerous)
+postgres -D /directory  // invocate database directory
+createdb 'dbName'       // create database
+psql 'dbName'           // invocate database
+CREATE TABLE table_name (column_1 datatype, column_2 datatype, column_3 datatype);
+\d                      // shows tables
+\q                      // exits
+INSERT INTO table_name (column_1, column_2, column_3) VALUES (value_1, value_2, value_3);
+SELECT column_1, column_2, column_3 FROM table_name;
+SELECT * FROM table_name;
+ALTER TABLE table_name ADD column datatype;
+UPDATE table_name SET some_column = some_value WHERE some_column = some_value;
+UPDATE table_name SET some_column = some_value WHERE some_column = some_value OR  some_column = some_value;
+SELECT * FROM table_name WHERE some_column LIKE 'A%';   // starting with 'A'
+SELECT * FROM table_name WHERE some_column LIKE '%y';   // ending with 'y'
+SELECT * FROM table_name WHERE some_column > some_value ORDER BY some_column;
+SELECT * FROM table_name ORDER BY some_column DESC;     // sort by descending
+SELECT * FROM table_name ORDER BY some_column ASC;      // sort by ascending
+SELECT AVG(some_column) FROM table_name;
+SELECT COUNT(some_column) FROM table_name;
+SELECT MAX(some_column) FROM table_name;
+SELECT SUM(some_column) FROM table_name GROUP BY some_column;
+DELETE FROM table_name WHERE some_column = some_value;
+DROP TABLE table_name;
+
+CREATE TABLE login (
+    ID serial NOT NULL PRIMARY KEY,
+    secret VARCHAR (100) NOT NULL,
+    name text UNIQUE NOT NULL
+);
+
+INSERT INTO login (secret, name) VALUES ('secretValue', 'nameValue');
+
+SELECT * FROM users JOIN login ON users.name = login.name;
+SELECT * FROM table_name1 JOIN table_name2 ON table_name1.column_name = table_name2.column_name;
+
 // customize bash
 nano ~/.bash_profile    // opens bash profile
 source ~/.bash_profile  // reloads profile
@@ -58,6 +101,7 @@ npm run build                           // react-scripts build
 npm test                                // react-scripts test --env=jsdom
 npm run eject                           // react-scripts eject
 
+git init
 git remote add origin `https://github.com/qmckinley/awareness-is-key.git`
 git push -u origin master
 
@@ -69,6 +113,7 @@ npm init -y                             // package.json -y = yes to everything
 npm install nodemon --save-dev          // devDependencies just for developing
 npm install express 
 npm install body-parser 
+npm install bcrypt-nodejs
 
 const fs = require('fs')                // file system
 
